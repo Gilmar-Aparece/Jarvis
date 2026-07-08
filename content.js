@@ -181,13 +181,14 @@
 
   // ---------- API key ----------
   let GEMINI_API_KEY = null;
-  function loadKey(cb) {
+function loadKey(cb) {
     try {
       chrome.storage.local.get(['geminiApiKey'], (res) => cb(res && res.geminiApiKey || null));
     } catch (e) {
-      cb(null); // not running as an extension (e.g. plain preview page)
+      cb(null);
     }
   }
+  loadKey((k) => { GEMINI_API_KEY = k; });   // ← remove or comment this line out too
   loadKey((k) => { GEMINI_API_KEY = k; });
   try {
     chrome.storage.onChanged.addListener((changes) => {
