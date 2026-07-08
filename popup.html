@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JARVIS Setup</title>
+<style>
+  body {
+    width: 280px;
+    background: #010610;
+    color: #5bc2e7;
+    font-family: 'Courier New', monospace;
+    padding: 16px;
+  }
+  h1 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #00e5ff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  p { font-size: 11px; color: #4baacb; line-height: 1.5; margin-bottom: 10px; }
+  a { color: #00e5ff; }
+  input {
+    width: 100%;
+    background: rgba(0,20,40,0.7);
+    border: 1px solid #102a45;
+    color: #5bc2e7;
+    padding: 8px;
+    font-family: monospace;
+    font-size: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  button {
+    width: 100%;
+    background: #00232f;
+    border: 1px solid #00e5ff;
+    color: #00e5ff;
+    padding: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  button:hover { background: #003847; }
+  #msg { font-size: 11px; margin-top: 8px; min-height: 14px; }
+</style>
+</head>
+<body>
+  <h1>Jarvis // API Key</h1>
+  <p>Paste your Gemini API key (starts with <b>AIza...</b>) from
+     <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>.
+     It's stored locally in your browser only.</p>
+  <input id="key" type="password" placeholder="AIza...">
+  <button id="save">Save Key</button>
+  <div id="msg"></div>
+  <script src="popup_ui.js"></script>
+</body>
+</html>
