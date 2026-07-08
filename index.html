@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JARVIS Mainframe — Preview</title>
+  <style>
+    body {
+      margin: 0;
+      background: #010610;
+      color: #5bc2e7;
+      font-family: 'Courier New', monospace;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .note { max-width: 420px; opacity: .6; font-size: 13px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div class="note">
+    This is a standalone preview of the JARVIS HUD (bottom-right corner).<br>
+    Voice AI replies need a Gemini API key — as a plain page it can't read the
+    extension's saved key, so load this project as an unpacked Chrome extension
+    and set your key via the toolbar icon for full functionality.
+  </div>
+  <script src="content.js"></script>
+</body>
+</html>
